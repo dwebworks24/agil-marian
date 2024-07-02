@@ -4,10 +4,10 @@
 #install env
 #pip install virtualenv
 # create virtual environment
-#python -m venv env-sree
+#python -m venv env
 
 # activate virtual environment
-#env-sree\Scripts\activate
+#env\Scripts\activate
 
 # install libs
 pip freeze > requirements.txt 
