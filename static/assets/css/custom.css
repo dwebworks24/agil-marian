@@ -1,3 +1,17 @@
 /*===================================== 
 YOU CAN WRIGHT CUSTOME CSS 
 ======================================*/
+.loader {
+    width: 50px;
+    aspect-ratio: 1;
+    background: url('../images/loaders/loader-2.png') no-repeat center center;
+    background-size: cover;
+    animation: rotate 1s infinite linear;
+  }
+  
+  @keyframes rotate {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
