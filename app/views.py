@@ -60,3 +60,6 @@ def contact(request):
     except:
         html_template = loader.get_template('uifiles/page-500.html')
         return HttpResponse(html_template.render(context, request))
+
+def career(request):
+    return render(request, 'uifiles/career.html')
