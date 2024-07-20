@@ -1,22 +1,21 @@
 {% extends 'uifiles/base.html' %}
 {% load static %}
-{% block title %} about {% endblock title %}
+{% block title %} carres  {% endblock title %}
 {% block content %}
 
 <div class="page-content">
-        
     <!-- Inner Banner -->
-    <div class="mt-bnr-inr overlay-wraper" style="background-image:url({% static  'assets/images/banner/careerimage.jpeg' %});">
+    <div class="mt-bnr-inr overlay-wraper"
+        style="background-image:url({% static  'assets/images/banner/careerimage.jpeg' %});">
         <div class="overlay-main bg-black opacity-07"></div>
         <div class="container">
             <div class="mt-bnr-inr-entry">
                 <h1 class="text-white">Career</h1>
-                <!-- Breadcrumb -->                            
+                <!-- Breadcrumb -->
                 <ul class="mt-breadcrumb breadcrumb-style-1">
                     <li><a href="javascript:void(0);">Home</a></li>
                     <li>Career</li>
                 </ul>
-                
             </div>
         </div>
     </div>
@@ -25,10 +24,32 @@
 
 
 
+
     </section>
+    <div class="section-full  about-video p-t130 p-b80 overlay-wraper" data-stellar-background-ratio="0.5"
+        style="background-image:url(images/background/bg7.jpg);">
+        <div class="overlay-main bg-secondry  opacity-09"></div>
+        <div class="container text-center ">
+            <div class="text-white help-section">
+                <h2 class="m-b30">Quality never goes out of style.</h2>
+                <h4 class="m-b30"><strong>We take pride in serving our customers safely. We are hear to help you
+                        out.</strong></h4>
+                <div class="newsletter-bx m-b30 d-flex justify-content-center">
+                    <form role="search" method="post">
+                        <div class="input-group mx-auto">
+                            <input name="news-letter" class="form-control" placeholder="ENTER YOUR EMAIL" type="text">
+                            &nbsp; &nbsp;
+                            <span class="input-group-btn mt-1">
+                                <button type="submit" class="site-button btn font-weight-600"><i
+                                        class="fa fa-paper-plane"></i></button>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
-
-                       
 </div>
 
 {% endblock %}
