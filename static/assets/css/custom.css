@@ -15,3 +15,15 @@ YOU CAN WRIGHT CUSTOME CSS
     }
   }
   
+
+
+    
+  .blog-post {
+    transition: transform 0.3s ease !important;
+    }
+    
+    .blog-post:hover {
+    transform: scale(1.05); 
+    background-color: red;
+    }
+
