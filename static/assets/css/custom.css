@@ -27,3 +27,7 @@ YOU CAN WRIGHT CUSTOME CSS
     background-color: red;
     }
 
+
+    .carrer-details ul li {
+      list-style: none !important;
+    }
