@@ -30,14 +30,17 @@ function counter_section(){
 	});
 }
 
+
+
 //________CLIENT LOGO CAROUSEL FUNCTION BY= owl.carousel.js________//
 function client_logo_carousel(){
 	jQuery('.client-logo-carousel').owlCarousel({
+		autoplay:true,
 		loop:true,
-		margin:50,
+		margin:5,
 		nav:true,
 		dots: false,
-		navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
+		navText: ['<i class="fa fa-chevron-left owl-left"></i>', '<i class="fa fa-chevron-right owl-right"></i>'],
 		responsive:{
 			0:{
 				items:2
