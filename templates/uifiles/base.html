@@ -318,8 +318,8 @@
                 <div class="container p-t30">
 
                     <div class="mt-footer-bot-center">
-                        <span class="copyrights-text">© 2022 Your Company. All Rights Reserved. Designed By
-                            7xtheme</span>
+                        <span class="copyrights-text">© 2024 Your Agile Marine Consultancy. All Rights Reserved. Designed By
+                            dwebworks</span>
                     </div>
 
                 </div>
@@ -358,7 +358,8 @@
     <!-- Loading Div ====== -->
 
     <!-- JAVASCRIPT  FILES ========================================= -->
-    <script src="{% static  'assets/js/jquery-3.6.1.min.js' %}"></script><!-- JQUERY.MIN JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{% static  'assets/js/jquery-3.6.1.min.js' %}"></script>
     <script src="{% static  'assets/js/popper.min.js' %}"></script><!-- POPPER.MIN JS -->
     <script src="{% static  'assets/js/bootstrap.min.js' %}"></script><!-- BOOTSTRAP.MIN JS -->
     <script src="{% static  'assets/js/jquery.bootstrap-touchspin.min.js' %}"></script><!-- FORM JS -->
@@ -373,6 +374,9 @@
     <script src="{% static  'assets/js/custom.js' %}"></script><!-- CUSTOM FUCTIONS  -->
     <script src="{% static  'assets/js/jquery.bgscroll.js' %}"></script><!-- BACKGROUND SCROLL -->
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
+
+
 
 
     <script src="{% static  'assets/plugins/revolution/revolution/js/jquery.themepunch.tools.min.js' %}"></script>
@@ -383,11 +387,17 @@
 
     <!-- REVOLUTION SLIDER SCRIPT FILES -->
     <script src="{% static  'assets/js/rev-script-2.js' %}"></script>
-    {% block javascripts %}{% endblock javascripts %}
+  
+
+    {% block javascripts %}
+    <script>   
+        $(".ripples-sec").ripples({
+            resolution: 256,
+            perturbance: 0.01,
+        });
+    </script>
+    {% endblock javascripts %}
 
 </body>
-
-
-<!-- Mirrored from theme7x.com/fastway/index-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 02 Jul 2024 07:07:04 GMT -->
 
 </html>

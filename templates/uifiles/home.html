@@ -93,14 +93,14 @@
     </div>
     <!-- SLIDER END -->
     <!-- ABOUT  -->
-    <div class="section-full  p-t80 p-b50">
+    <div class="section-full   p-t80 p-b50">
         <div class="container">
 
             <div class="row">
-                <div class="col-lg-6 col-md-12">
+                <div class="col-lg-6 col-md-12 ripples-sec">
                     <div class="mt-box m-b30">
                         <div class="mt-thum-bx mt-img-effect">
-                            <img src="/static/assets/images/about/agile-marina.png" alt="agile-marina">
+                            <img src="/static/assets/images/about/agile-marina.png" alt="agile-marina" class="ripples-sec">
                         </div>
                     </div>
                 </div>
@@ -124,8 +124,6 @@
         </div>
     </div>
     <!-- ABOUT END -->
-
-
     <!-- Why Choose Us -->
     <div class="section-full p-t80 p-b50 bg-gray">
         <div class="container">
@@ -235,7 +233,7 @@
             <div class="row">
                 <div class="col-lg-5 col-md-12">
                     <div class="mt-box m-b30">
-                        <div class="mt-thum-bx mt-img-effect  mt-img-overlay2">
+                        <div class="mt-thum-bx mt-img-effect  mt-img-overlay2 ripples-sec">
                             <img src="{% static 'assets/images/background/bg12.jpg' %}" alt="">
                             <a href="https://player.vimeo.com/video/66491481" class="mfp-video play-now">
                                 <i class="icon fa fa-play"></i>
@@ -304,7 +302,7 @@
     </div>
 
     <!-- services -->
-    <div class="section-content sx-how-it-work pt-5" style="background-color: #f6f4f4;">
+    <div class="section-content sx-how-it-work pt-5 ripples-sec" style="background-color: #f6f4f4; background-image: url(https://i.postimg.cc/J07vSC9q/hero-background.jpg); background-size: cover;">
         <div class="container pt-5">
             <!-- TITLE START-->
             <div class="section-head text-center">
@@ -320,7 +318,7 @@
 
                 <!-- block 1 -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="mt-box m-b30">
+                    <div class="mt-box m-b30 box-1">
                         <div class="mt-icon-box-wraper  p-a30 left bg-white  hover-border-outer hover-border">
                             <div class="icon-md radius m-b15">
                                 <span class="icon-cell  site-text-primary"><i class="flaticon-ship-1"></i></span>
@@ -370,6 +368,10 @@
                             </div>
                         </div>
                     </div>
+                    
+                </div>
+                <!-- block 2 -->
+                <div class="col-lg-4 col-md-6">
                     <div class="mt-box m-b30">
                         <div class="mt-icon-box-wraper  p-a30 left bg-white  hover-border-outer hover-border">
                             <div class="icon-md radius m-b15">
@@ -383,17 +385,11 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- block 2 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="mt-box m-b30">
+                    <div class="mt-box m-b30 center-card-img" style=" border-radius: 2%;">
                         <div class="mt-media mid-img-verticle">
-                            <a href="#"><img src="{% static 'assets/images/logo-dark.png' %}" alt=""></a>
+                            <!-- <a href="#"><img src="{% static 'assets/images/logo-dark.png' %}" alt=""></a> -->
                         </div>
                     </div>
-                </div>
-                <!-- block 3 -->
-                <div class="col-lg-4 col-md-12">
                     <div class="mt-box m-b30">
                         <div class="mt-icon-box-wraper  p-a30 left bg-white   hover-border-outer hover-border">
                             <div class="icon-md radius m-b15">
@@ -406,6 +402,10 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <!-- block 3 -->
+                <div class="col-lg-4 col-md-12">
+                    
                     <div class="mt-box m-b30">
                         <div class="mt-icon-box-wraper  p-a30 left bg-white   hover-border-outer hover-border">
                             <div class="icon-md radius m-b15">
@@ -463,8 +463,8 @@
 
 
     <!--Video Section -->
-    <div class="section-full  about-video p-t130 p-b80 overlay-wraper" data-stellar-background-ratio="0.5"
-        style="background-image:url({% static 'assets/images/background/bg7.jpg' %});">
+    <div class="section-full parlex-sec about-video p-t130 p-b80 overlay-wraper ripples-sec" data-stellar-background-ratio="0.5"
+       >
         <div class="overlay-main bg-secondry  opacity-09"></div>
         <div class="container text-center ">
             <div class="text-white help-section">
@@ -733,7 +733,7 @@
 
     <!-- Testimonials -->
     <div class="section-full p-t80 p-b80 bg-center bg-full-height bg-no-repeat bg-gray"
-        style="background-image:url({% static 'assets/images/background/bg-map.png);">
+        style="background-image:url(static/assets/images/background/bg-map.png);">
         <div class="container">
             <!-- TITLE START -->
             <div class="section-head text-center">
@@ -816,7 +816,7 @@
 
         </div>
     </div>
-
+   
 </div>
 
 {% endblock %}

@@ -31,3 +31,17 @@ YOU CAN WRIGHT CUSTOME CSS
     .carrer-details ul li {
       list-style: none !important;
     }
+/* 
+    .box-1{
+      position: absolute;
+      top: -10%;
+      left: 20%;
+    } */
+
+    .center-card-img{
+      background-image: url(../images/logo-dark.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      padding-top: 350px;
+    }

@@ -14337,3 +14337,12 @@ background: linear-gradient(90deg, rgba(175,213,241,1) 0%, rgba(210,241,166,1) 1
 	justify-content: space-between;
 	align-items: center;
 }
+
+.parlex-sec{
+ background-image: url('../images/background/bg7.jpg');
+ background-position: cener;
+ background-attachment: fixed;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+/* style="background-image:url({% static 'assets/images/background/bg7.jpg' %});" */
