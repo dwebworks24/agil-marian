@@ -18,25 +18,18 @@ YOU CAN WRIGHT CUSTOME CSS
 
 
     
-  .blog-post {
+.blogs-list .blog-post {
     transition: transform 0.3s ease !important;
     }
-    
     .blog-post:hover {
     transform: scale(1.05); 
-    background-color: red;
     }
 
 
     .carrer-details ul li {
       list-style: none !important;
     }
-/* 
-    .box-1{
-      position: absolute;
-      top: -10%;
-      left: 20%;
-    } */
+
 
     .center-card-img{
       background-image: url(../images/logo-dark.png);
@@ -44,4 +37,8 @@ YOU CAN WRIGHT CUSTOME CSS
       background-repeat: no-repeat;
       background-size: contain;
       padding-top: 350px;
+    }
+
+    .carrer-details li {
+      font-size:18px;
     }

@@ -65,7 +65,7 @@ def blogs(request):
 def blog_details(request):
     context = {}
     try:
-        return render(request, 'uifiles/blog.html',context)
+        return render(request, 'uifiles/blog-details.html',context)
     except template.TemplateDoesNotExist:
         html_template = loader.get_template('uifiles/page-404.html')
         return HttpResponse(html_template.render(context, request))

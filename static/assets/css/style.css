@@ -9736,7 +9736,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 	margin-bottom: 15px;
 	margin-left: 0;
 	margin-right: 0;
-	max-width: 200px;
+	max-width: 300px;
 	height: 60px;
 }
 
@@ -10374,8 +10374,8 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 /*____OWL SLIDER BUTTON____*/
 .owl-carousel .owl-nav button.owl-next,
 .owl-carousel .owl-nav button.owl-prev{
-	background-color: #000;
-	border-color: #000;
+	background-color:#0E46A6;
+	border-color: #0E46A6;
 	color: #ffffff;
 	padding: 8px 12px !important;
 	font-size: 12px;
@@ -13927,9 +13927,11 @@ ol.commentlist li::after {
 
 .header-style-2 .is-fixed .main-bar {position: fixed; border-bottom: 1px solid rgba(255, 255, 255, 0.2);}
 .header-style-2 .is-fixed.color-fill .main-bar {
+	background-color:#112D3E;
 	/* background: #1a1a1a; */
-	background: rgb(175,213,241);
-background: linear-gradient(90deg, rgba(175,213,241,1) 0%, rgba(210,241,166,1) 100%);
+
+	/* background: rgb(175,213,241);
+	background: linear-gradient(90deg, rgba(175,213,241,1) 0%, rgba(210,241,166,1) 100%); */
 }
 
 
@@ -14339,8 +14341,8 @@ background: linear-gradient(90deg, rgba(175,213,241,1) 0%, rgba(210,241,166,1) 1
 }
 
 .parlex-sec{
- background-image: url('../images/background/bg7.jpg');
- background-position: cener;
+ background-image: url('../images/background/container-cargo-freight-ship-port 1.jpg');
+ background-position:  center ;
  background-attachment: fixed;
  background-repeat: no-repeat;
  background-size: cover;
