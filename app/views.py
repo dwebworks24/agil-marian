@@ -39,6 +39,18 @@ def services(request):
         html_template = loader.get_template('uifiles/page-500.html')
         return HttpResponse(html_template.render(context, request))
     
+def service_details(request):
+    context = {}
+    try:
+        return render(request, 'uifiles/services-details.html',context)
+    except template.TemplateDoesNotExist:
+        html_template = loader.get_template('uifiles/page-404.html')
+        return HttpResponse(html_template.render(context, request))
+    except:
+        html_template = loader.get_template('uifiles/page-500.html')
+        return HttpResponse(html_template.render(context, request))
+    
+    
 def blogs(request):
     context = {}
     try:
@@ -49,7 +61,20 @@ def blogs(request):
     except:
         html_template = loader.get_template('uifiles/page-500.html')
         return HttpResponse(html_template.render(context, request))
+
+def blog_details(request):
+    context = {}
+    try:
+        return render(request, 'uifiles/blog.html',context)
+    except template.TemplateDoesNotExist:
+        html_template = loader.get_template('uifiles/page-404.html')
+        return HttpResponse(html_template.render(context, request))
+    except:
+        html_template = loader.get_template('uifiles/page-500.html')
+        return HttpResponse(html_template.render(context, request))
     
+
+
 def contact(request):
     context = {}
     try:

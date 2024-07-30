@@ -2,5 +2,141 @@
 {% load static %}
 {% block title %} blog | Collecting Various Types plans {% endblock title %}
 {% block content %}
+<div class="page-content">
+        
+    <!-- Inner Banner --> 
+    <div class="mt-bnr-inr overlay-wraper" style="background-image:url(images/banner/blog-banner.jpg);">
+        <div class="overlay-main bg-black opacity-07"></div>
+        <div class="container">
+            <div class="mt-bnr-inr-entry">
+                <h1 class="text-white">Blogs</h1>
+                <!-- Breadcrumb -->                            
+                <ul class="mt-breadcrumb breadcrumb-style-1">
+                    <li><a href="javascript:void(0);">Home</a></li>
+                    <li>Blog List</li>
+                </ul>
+          
+            </div>
+        </div>
+    </div>
+             
+    <!-- Blog Grid -->
+    <div class="section-full p-t80 p-b50">
+        <div class="container">
+           
+            <div class="row">
+                <!-- Block 1 -->
+                <div class="col-lg-4 col-md-4">
+                    <div class="blog-post latest-blog-1 date-style-1 block-shadow overflow-hide  bg-white m-b30">
+                        <div class="mt-post-media">
+                            <img src="{% static 'assets/images/blog/grid/blog1.png' %}" alt="">
+                        </div>
+                        <div class="mt-post-info  p-a30">
+                            <div class="mt-post-meta bdr-1 bdr-solid bdr-b-1 bdr-gray-light p-b20">
+                                <ul>
+                                    <li class="post-date"> <i
+                                            class="fa fa-calendar site-text-primary"></i><strong>09</strong><span>
+                                            Oct 2022</span> </li>
+                                    <li class="post-author"><i class="fa fa-user site-text-primary"></i><a
+                                            href="javascript:void(0);">By <span>John</span></a> </li>
+                                    <li class="post-comment"><i class="fa fa-comments site-text-primary"></i> <a
+                                            href="javascript:;">14 Comment</a> </li>
+                                </ul>
+                            </div>
+
+                            <div class="mt-post-title ">
+                                <h4 class="post-title">A partnership based trust.</h4>
+                            </div>
+
+                            <div class="mt-post-text">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            </div>
+                            <a href="#" class="site-button-link">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Block 2 -->
+                <div class="col-lg-4 col-md-4">
+                    <div class="blog-post latest-blog-1 date-style-1 block-shadow overflow-hide  bg-white m-b30">
+                        <div class="mt-post-media">
+                            <img src="{% static 'assets/images/blog/grid/blog2.png' %}" alt="">
+                        </div>
+                        <div class="mt-post-info  p-a30">
+                            <div class="mt-post-meta bdr-1 bdr-solid bdr-b-1 bdr-gray-light p-b20">
+                                <ul>
+                                    <li class="post-date"> <i
+                                            class="fa fa-calendar site-text-primary"></i><strong>15</strong><span>
+                                            Oct 2022</span> </li>
+                                    <li class="post-author"><i class="fa fa-user site-text-primary"></i><a
+                                            href="javascript:void(0);">By <span>John</span></a> </li>
+                                    <li class="post-comment"><i class="fa fa-comments site-text-primary"></i> <a
+                                            href="javascript:;">14 Comment</a> </li>
+                                </ul>
+                            </div>
+
+                            <div class="mt-post-title ">
+                                <h4 class="post-title">An anchor in a new era.</h4>
+                            </div>
+
+                            <div class="mt-post-text">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            </div>
+                            <a href="#" class="site-button-link">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Block 3 -->
+                <div class="col-lg-4 col-md-4">
+                    <div class="blog-post latest-blog-1 date-style-1 block-shadow overflow-hide  bg-white m-b30">
+                        <div class="mt-post-media">
+                            <img src="{% static 'assets/images/blog/grid/blog3.png' %}" alt="">
+                        </div>
+                        <div class="mt-post-info  p-a30">
+                            <div class="mt-post-meta bdr-1 bdr-solid bdr-b-1 bdr-gray-light p-b20">
+                                <ul>
+                                    <li class="post-date"> <i
+                                            class="fa fa-calendar site-text-primary"></i><strong>20</strong><span>
+                                            Oct 2022</span> </li>
+                                    <li class="post-author"><i class="fa fa-user site-text-primary"></i><a
+                                            href="javascript:void(0);">By <span>John</span></a> </li>
+                                    <li class="post-comment"><i class="fa fa-comments site-text-primary"></i> <a
+                                            href="javascript:;">14 Comment</a> </li>
+                                </ul>
+                            </div>
+
+                            <div class="mt-post-title ">
+                                <h4 class="post-title">Fueling your logistic chain.</h4>
+                            </div>
+
+                            <div class="mt-post-text">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            </div>
+                            <a href="#" class="site-button-link">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+                <!-- Pagination -->
+                <div class="pagination-bx col-lg-12 clearfix">
+                    <ul class="pagination">
+                       <li><a href="#">«</a></li>
+                       <li class="active"><a href="#">1</a></li>
+                       <li><a href="#">2</a></li>
+                       <li><a href="#">3</a></li>
+                       <li><a href="#">4</a></li>
+                       <li><a href="#">5</a></li>
+                       <li><a href="#">»</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+       
+    </div>
+
+</div>
+
 
 {% endblock %}
