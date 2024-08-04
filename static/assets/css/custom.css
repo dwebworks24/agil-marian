@@ -42,3 +42,10 @@ YOU CAN WRIGHT CUSTOME CSS
     .carrer-details li {
       font-size:18px;
     }
+
+    .hexagons-section{
+      /* background-image: url(../images/banner/water-bg.png) !important; */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
