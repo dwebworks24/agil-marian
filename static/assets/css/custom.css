@@ -32,7 +32,7 @@ YOU CAN WRIGHT CUSTOME CSS
 
 
     .center-card-img{
-      background-image: url(../images/logo-dark.png);
+      background-image: url(../images/circle-logo.png);
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
@@ -49,3 +49,19 @@ YOU CAN WRIGHT CUSTOME CSS
       background-repeat: no-repeat;
       background-size: cover;
     }
+    
+
+.service-card .blog-post .post-title {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+  
+.service-card .blog-post .mt-post-text p {
+  text-align: justify;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
