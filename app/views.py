@@ -88,3 +88,6 @@ def contact(request):
 
 def career(request):
     return render(request, 'uifiles/career.html')
+
+def commingsoon(request):
+    return render(request, 'uifiles/comming-soon.html')

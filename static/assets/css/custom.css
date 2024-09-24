@@ -58,10 +58,10 @@ YOU CAN WRIGHT CUSTOME CSS
   -webkit-box-orient: vertical;
 }
   
-.service-card .blog-post .mt-post-text p {
+/* .service-card .blog-post .mt-post-text p {
   text-align: justify;
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
-}
+} */
