@@ -20,7 +20,7 @@ def home(request):
 def about(request):
     context = {}
     try:
-        return render(request, 'uifiles/about.html',context)
+        return render(request, 'uifiles/about-us.html',context)
     except template.TemplateDoesNotExist:
         html_template = loader.get_template('uifiles/page-404.html')
         return HttpResponse(html_template.render(context, request))
@@ -51,10 +51,10 @@ def service_details(request):
         return HttpResponse(html_template.render(context, request))
     
     
-def blogs(request):
+def news_articles(request):
     context = {}
     try:
-        return render(request, 'uifiles/blog.html',context)
+        return render(request, 'uifiles/news_articles.html',context)
     except template.TemplateDoesNotExist:
         html_template = loader.get_template('uifiles/page-404.html')
         return HttpResponse(html_template.render(context, request))
@@ -78,7 +78,7 @@ def blog_details(request):
 def contact(request):
     context = {}
     try:
-        return render(request, 'uifiles/contact.html',context)
+        return render(request, 'uifiles/contact-us.html',context)
     except template.TemplateDoesNotExist:
         html_template = loader.get_template('uifiles/page-404.html')
         return HttpResponse(html_template.render(context, request))
@@ -86,8 +86,8 @@ def contact(request):
         html_template = loader.get_template('uifiles/page-500.html')
         return HttpResponse(html_template.render(context, request))
 
-def career(request):
-    return render(request, 'uifiles/career.html')
+# def career(request):
+#     return render(request, 'uifiles/career.html')
 
-def commingsoon(request):
-    return render(request, 'uifiles/comming-soon.html')
+# def commingsoon(request):
+#     return render(request, 'uifiles/comming-soon.html')

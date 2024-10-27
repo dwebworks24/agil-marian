@@ -2,736 +2,838 @@
 {% load static %}
 {% block title %} Home {% endblock title %}
 {% block content %}
-<!-- Content Mid part -->
-<div class="page-content">
-
-    <!-- SLIDER START -->
-    <div id="rev_slider_1059_1_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="concept121"
-        data-source="gallery" style="background-color:#000000;padding:0px;">
-        <div id="rev_slider_1059_1" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.4.1">
-            <ul>
-                {% for slide in slides %}
-                <li data-index="rs-{{ forloop.counter }}" data-transition="boxfade" data-slotamount="default"
-                    data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default"
-                    data-masterspeed="default" data-thumb="{{ slide.image.url }}" data-rotate="0"
-                    data-saveperformance="off" data-title="{{ slide.title }}" data-param1="" data-param2=""
-                    data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8=""
-                    data-param9="" data-param10="" data-description="">
-                    <img src="{{ slide.image.url }}" alt="" data-bgposition="center center" data-bgfit="cover"
-                        data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
-                   
-                    <div class="tp-caption tp-shape tp-shapewrapper" id="slide-{{ forloop.counter }}-layer-1"
-                        data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
-                        data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']"
-                        data-width="full" data-height="full" data-whitespace="nowrap" data-type="shape"
-                        data-basealign="slide" data-responsive_offset="off" data-responsive="off"
-                        data-frames='[{"from":"opacity:0;","speed":1000,"to":"o:1;","delay":0,"ease":"Power2.easeInOut"},{"delay":"wait","speed":1000,"to":"opacity:0;","ease":"nothing"}]'
-                        data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]"
-                        data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                        style="z-index: 5;background-color:rgba(0, 0, 0, 0.5);border-color:rgba(0, 0, 0, 0);border-width:0px;">
-                    </div>
-
-                  
-                    <div class="tp-caption text-white Concept-SubTitle tp-resizeme rs-parallaxlevel-2"
-                        id="slide-{{ forloop.counter }}-layer-4" data-x="['center','center','center','center']"
-                        data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
-                        data-voffset="['-65','-65','-57','-70']" data-fontsize="['25','25','20','20']"
-                        data-lineheight="['25','25','20','20']" data-width="none" data-height="none"
-                        data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
-                        data-frames='[{"from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","speed":1500,"to":"o:1;","delay":1500,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"x:left(R);","ease":"Power3.easeIn"}]'
-                        data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]"
-                        data-paddingright="[0,0,0,0]" data-paddingbottom="[10,10,10,10]" data-paddingleft="[0,0,0,0]"
-                        style="z-index: 6; white-space: nowrap; text-transform:uppercase;font-family: 'Roboto', sans-serif;">
-                        {{ slide.subtitle }}</div>
-
-                   
-                    <div class="tp-caption Concept-Title text-white tp-resizeme rs-parallaxlevel-2"
-                        id="slide-{{ forloop.counter }}-layer-2" data-x="['center','center','center','center']"
-                        data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
-                        data-voffset="['0','0','0','0']" data-fontsize="['60','60','50','40']"
-                        data-lineheight="['70','70','50','40']" data-width="['none','none','none','400']"
-                        data-height="none" data-whitespace="['nowrap','nowrap','nowrap','normal']" data-type="text"
-                        data-responsive_offset="on"
-                        data-frames='[{"from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","speed":1500,"to":"o:1;","delay":1700,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"x:left(R);","ease":"Power3.easeIn"}]'
-                        data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]"
-                        data-paddingright="[0,0,0,0]" data-paddingbottom="[10,10,10,10]" data-paddingleft="[0,0,0,0]"
-                        style="z-index: 7; white-space: nowrap; text-transform:uppercase;font-weight:900; font-family: 'Roboto', sans-serif;">
-                        {{ slide.title }}</div>
-
-                  
-                    <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme rs-parallaxlevel-2"
-                        id="slide-{{ forloop.counter }}-layer-5" data-x="['center','center','center','center']"
-                        data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
-                        data-voffset="['50','50','43','60']" data-width="80" data-height="2" data-whitespace="nowrap"
-                        data-type="shape" data-responsive_offset="on"
-                        data-frames='[{"from":"x:[175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:1;","mask":"x:[-100%];y:0;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1900,"ease":"Power3.easeOut"},{"delay":"wait","speed":1000,"to":"x:left(R);","ease":"Power3.easeIn"}]'
-                        data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]"
-                        data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                        style="z-index: 8;background-color:rgba(255, 255, 255, 1);border-color:rgba(255, 255, 255, 0.50);border-width:0px;">
-                    </div>
-
-                    
-                    <div class="tp-caption Concept-Notice text-white rs-parallaxlevel-2"
-                        id="slide-{{ forloop.counter }}-layer-12" data-x="['center','center','center','center']"
-                        data-hoffset="['1','1','1','1']" data-y="['top','top','top','top']"
-                        data-voffset="['560','450','550','440']" data-width="none" data-height="none"
-                        data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
-                        data-frames='[{"from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","speed":1500,"to":"o:1;","delay":2300,"ease":"Power3.easeInOut"}]'
-                        data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]"
-                        data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                        style="z-index: 10; white-space: nowrap;">
-                        <div class="rs-looped rs-slideloop" data-easing="Power1.easeInOut" data-speed="1" data-xs="0"
-                            data-xe="0" data-ys="10" data-ye="0">
-                            <a href="{{ slide.link }}" class="site-button">CLICK ME</a>
-                        </div>
-                    </div>
-                </li>
-                {% endfor %}
-            </ul>
-            <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
+<!-- Start Banner 
+    ============================================= -->
+<div class="banner-area inc-shape text-multi-weight">
+    <div id="bootcarousel" class="carousel slide carousel-fade animate_text" data-ride="carousel">
+        <!-- Indicators for slides -->
+        <div class="carousel-indicator">
+            <ol class="carousel-indicators right">
+                <li data-target="#bootcarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#bootcarousel" data-slide-to="1"></li>
+            </ol>
         </div>
-    </div>
-    <!-- SLIDER END -->
-    <!-- ABOUT  -->
-    <div class="section-full   p-t80 p-b50">
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-6 col-md-12 ripples-sec">
-                    <div class="mt-box m-b30">
-                        <div class="mt-thum-bx mt-img-effect">
-                            <img src="/static/assets/images/about/agile-marina.png" alt="agile-marina"
-                                class="ripples-sec">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="carousel-item bg-cover active"
+                style="background-image: url({% static 'assets/img/banners/banner.jpg' %});">
+                <div class="box-table">
+                    <div class="box-cell">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-8">
+                                    <div class="content">
+                                        <h2 data-animation="animated slideInRight">Cleaning your <span>worries
+                                                away</span></h2>
+                                        <p data-animation="animated slideInLeft">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga eos,
+                                            doloremque reiciendis sequi tempora odio nam
+                                        </p>
+                                        <a data-animation="animated zoomInUp" class="btn btn-theme effect btn-md"
+                                            href="#">Book a Schedule</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="col-lg-6 col-md-12">
-                    <div class="mt-box sx-what-wedo">
-                        <span
-                            class="site-text-primary display-block title-second text-uppercase font-20 font-weight-600 display-block m-b15">What
-                            we do</span>
-                        <h2 class="m-t0">Our mision is best in The Transport!</h2>
-                        <p>At agile marine consultancy, we offer a comprehensive range of specialized services designed
-                            to meet the diverse needs of the maritime industry. Our team of seasoned professionals
-                            brings a wealth of experience and expertise in various areas, ensuring that we deliver
-                            innovative solutions and expert consultancy services tailored to each client's unique
-                            requirements.</p>
-                        <a href="/about-us/" class="site-button">Read more</a>
-                    </div>
+                    <!-- Shape -->
+                    <div class="shape-right-bottom" data-animation="animated slideInUp"
+                        style="background-image: url({% static 'assets/img/shape/7.png' %});"></div>
+                    <!-- Shape -->
                 </div>
             </div>
-
-        </div>
-    </div>
-    <!-- ABOUT END -->
-    <!-- Why Choose Us -->
-    <div class="section-full p-t80 p-b50 bg-gray">
-        <div class="container">
-            <!-- TITLE START-->
-            <div class="section-head text-center">
-                <h2 data-title="Choose us">Why Choose Us </h2>
-                <div class="mt-separator-outer">
-                    <div class="mt-separator site-bg-primary"></div>
+            <div class="carousel-item bg-cover" style="background-image: url({% static 'assets/img/banners/banner.jpg' %});">
+                <div class="box-table">
+                    <div class="box-cell">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-8">
+                                    <div class="content">
+                                        <h2 data-animation="animated slideInRight">Best cleaning <span>From the
+                                                city</span></h2>
+                                        <p data-animation="animated slideInLeft">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga eos,
+                                            doloremque reiciendis sequi tempora odio nam
+                                        </p>
+                                        <a data-animation="animated zoomInUp" class="btn btn-theme effect btn-md"
+                                            href="#">Book a Schedule</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Shape -->
+                    <div class="shape-right-bottom" data-animation="animated slideInUp"
+                        style="background-image: url({% static 'assets/img/shape/7.png' %});"></div>
+                    <!-- Shape -->
                 </div>
-            </div>
-            <!-- TITLE END-->
-            <div class="section-content">
-
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 m-b30">
-                        <div class="mt-icon-box-wraper  p-a30 hover-border-outer hover-border bg-white m-b30 ">
-                            <div class="text-center radius m-b15 m-auto">
-                                <span class="site-text-primary"><i class="flaticon-people-1"></i></span>
-                            </div>
-                            <div class="icon-content">
-                                <h4 class="mt-tilte  m-b15 text-center">Naval Architecture</h4>
-                                <p class="text-justify">Naval architecture is the engineering discipline concerned with
-                                    the design, construction, maintenance, and operation of marine vessels and
-                                    structures. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 m-b30">
-                        <div class="mt-icon-box-wraper   p-a30  hover-border-outer hover-border bg-white m-b30">
-                            <div class="text-center radius m-b15">
-                                <span class="icon-cell  site-text-primary"><i class="flaticon-pencil"></i></span>
-                            </div>
-                            <div class="icon-content">
-                                <h4 class="mt-tilte  m-b15 text-center">Green Services</h4>
-                                <p class="text-justify">Green services refer to a range of practices and offerings
-                                    designed to reduce environmental impact and promote sustainability.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 m-b30">
-                        <div class="mt-icon-box-wraper  p-a30 hover-border-outer hover-border bg-white m-b30">
-                            <div class="text-center radius m-b15">
-                                <span class="icon-cell  site-text-primary"><i class="flaticon-wallet"></i></span>
-                            </div>
-                            <div class="icon-content">
-                                <h4 class="mt-tilte  m-b15 text-center">On-Site Services</h4>
-                                <p class="text-justify">
-                                    On-site services refer to a variety of support and operational activities performed
-                                    directly at a client's location or a specific site, rather than remotely or
-                                    off-site. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 m-b30">
-                        <div class="mt-icon-box-wraper  p-a30 hover-border-outer hover-border bg-white m-b30">
-                            <div class="text-center radius m-b15">
-                                <span class="icon-cell  site-text-primary"><i class="flaticon-solution"></i></span>
-                            </div>
-                            <div class="icon-content">
-                                <h4 class="mt-tilte  m-b15 text-center">Conversions & Retrofits</h4>
-                                <p class="text-justify">Conversions and retrofits refer to processes that modify
-                                    existing systems, structures, or equipment to improve functionality, efficiency, or
-                                    compliance with new standards.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 m-b30">
-                        <div class="mt-icon-box-wraper   p-a30  hover-border-outer hover-border bg-white m-b30">
-                            <div class="text-center radius m-b15">
-                                <span class="icon-cell  site-text-primary"><i class="flaticon-time-passing"></i></span>
-                            </div>
-                            <div class="icon-content">
-                                <h4 class="mt-tilte  m-b15 text-center">Offshore Engineering</h4>
-                                <p class="text-justify">Offshore engineers address challenges such as harsh weather
-                                    conditions, deep-water operations, and environmental protection to ensure the
-                                    safety, efficiency, and sustainability of offshore projects.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 m-b30">
-                        <div class="mt-icon-box-wraper  p-a30  hover-border-outer hover-border bg-white m-b30">
-                            <div class="text-center radius m-b15">
-                                <span class="icon-cell  site-text-primary"><i
-                                        class="flaticon-customer-service"></i></span>
-                            </div>
-                            <div class="icon-content">
-                                <h4 class="mt-tilte  m-b15 text-center">Transportation & Installation</h4>
-                                <p class="text-justify">Transportation and installation (T&I) refer to the processes
-                                    involved in moving and setting up large structures, equipment, or components,
-                                    particularly in industries such as construction, offshore engineering, and energy
-                                    production.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
     </div>
-
-    <!-- Shipment Section -->
-    <div class="section-full p-t80 bg-no-repeat bg-center bg-white"
-        style="background-image:url(images/background/bg-map.png);">
-
-        <div class="container pb-5">
-
-            <div class="row">
-                <div class="col-lg-5 col-md-12">
-                    <div class="mt-box m-b30">
-                        <div class="mt-thum-bx mt-img-effect  mt-img-overlay2 ripples-sec">
-                            <img src="{% static 'assets/images/background/bg12.jpg' %}" alt="">
-                            <a href="https://player.vimeo.com/video/66491481" class="mfp-video play-now">
-                                <i class="icon fa fa-play"></i>
-                                <span class="ripple"></span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-7 col-md-12">
-                    <div class="sx-shipment-wrap">
-                        <div class="mt-box m-b25">
-                            <h2 class="display-block m-b15 m-t0">We give you complete control of your ship. and help
-                                you.</h2>
-                            <p class="m-b15">We provide full control of your shipment and offer dedicated support to
-                                assist you every step of the way.</p>
-                            <ul class="list-check-circle primary m-b20">
-                                <li><b>Complete Control:</b> Manage and track your shipment at every stage with our
-                                    user-friendly platform.</li>
-                                <li><b>Dedicated Support:</b> Receive personalized assistance from our team to ensure
-                                    your shipment process is smooth and efficient.</li>
-                                <li><b>Reliable Service:</b> Trust in our dependable and secure delivery solutions to
-                                    get your goods where they need to be, on time.</li>
-                            </ul>
-                            <!-- <a href="#" class="site-button">Read more</a> -->
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 col-sm-6">
-                                <div
-                                    class="m-b30 text-black mt-icon-box-wraper center bdr-1 bdr-solid bdr-gray-light  bg-white p-a20">
-                                    <div class="counter font-42 font-weight-800 m-b15 site-text-primary">450</div>
-                                    <h4 class="m-tb0">Delivered Packages</h4>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 col-sm-6">
-                                <div
-                                    class="m-b30 text-black mt-icon-box-wraper center bdr-1 bdr-solid bdr-gray-light bg-white p-a20">
-                                    <div class="counter font-42 font-weight-800 m-b15 site-text-primary">45</div>
-                                    <h4 class="m-tb0">Countries Covered</h4>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 col-sm-6">
-                                <div
-                                    class="m-b30 text-black mt-icon-box-wraper center bdr-1 bdr-solid bdr-gray-light bg-white p-a20">
-                                    <div class="counter font-42 font-weight-800 m-b15  site-text-primary">670</div>
-                                    <h4 class="m-tb0">Satisfied Clients</h4>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 col-sm-6">
-                                <div
-                                    class="m-b30 text-black mt-icon-box-wraper center bdr-1 bdr-solid bdr-gray-light bg-white p-a20">
-                                    <div class="counter font-42 font-weight-800 m-b15 site-text-primary">1500</div>
-                                    <h4 class="m-tb0">Tons of Goods</h4>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <!-- services -->
-    <div class="section-content sx-how-it-work pt-5 ripples-sec"
-        style="background-color: #f6f4f4; background-image: url(../../static/assets/images/banner/water-bg.png); background-size: cover;">
-        <div class="container pt-5">
-            <!-- TITLE START-->
-            <div class="section-head text-center">
-                <h2 data-title="Services" class="text-light">All Services</h2>
-                <div class="mt-separator-outer">
-                    <div class="mt-separator site-bg-primary"></div>
-                </div>
-            </div>
-            <!-- TITLE END-->
-        </div>
-        <div class="container pb-5">
-            <div class="row ">
-                <!--service1 -->
-                <div class="col-lg-4 col-md-4 service-card">
-                    <div class="blog-post latest-blog-1 date-style-1 block-shadow overflow-hide  bg-white m-b30">
-                        <div class="mt-post-media">
-                            <img src="{% static 'assets/images/services/naval-architecture-basic-design.png' %}" alt="">
-                        </div>
-                        <div class="mt-post-info  p-a30">
-                            <div class="mt-post-title ">
-                                <h4 class="post-title">Naval Architecture & Basic Design of Ships</h4>
-                            </div>
-
-                            <div class="mt-post-text">
-                                <p>At Agile Marine Consultancy, our team of experienced naval architects and marine engineers provide comprehensive basic design services for ships and offshore structures. Our expertise includes.</p>
-                            </div>
-                            <a href="/services-details/" class="site-button-link">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                 <!--service2 -->
-                <div class="col-lg-4 col-md-4 service-card">
-                    <div class="blog-post latest-blog-1 date-style-1 block-shadow overflow-hide  bg-white m-b30">
-                        <div class="mt-post-media">
-                            <img src="{% static 'assets/images/services/project-management-and-consultancy.png' %}" alt="">
-                        </div>
-                        <div class="mt-post-info  p-a30">
-                            <div class="mt-post-title ">
-                                <h4 class="post-title">Project Management and Consultancy</h4>
-                            </div>
-
-                            <div class="mt-post-text">
-                                <p>At Agile Marine Consultancy, our experienced project managers and consultants provide expert guidance and support to ensure successful project delivery</p>
-                            </div>
-                            <a href="/services-details/" class="site-button-link">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                  <!--service3 -->
-                  <div class="col-lg-4 col-md-4 service-card">
-                    <div class="blog-post latest-blog-1 date-style-1 block-shadow overflow-hide  bg-white m-b30">
-                        <div class="mt-post-media">
-                            <img src="{% static 'assets/images/services/project-management-and-consultancy.png' %}" alt="">
-                        </div>
-                        <div class="mt-post-info  p-a30">
-                            <div class="mt-post-title ">
-                                <h4 class="post-title">All Regulatory documentation</h4>
-                            </div>
-
-                            <div class="mt-post-text">
-                                <p>At Agile Marine Consultancy, we provide comprehensive regulatory documentation services to ensure compliance with international and national regulations. Our team of experts prepares and manages all necessary documents, including.</p>
-                            </div>
-                            <a href="/services-details/" class="site-button-link">Read More</a>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-           
-        </div>
-    </div>
-
-
-    <!--Video Section -->
-
-    <!-- Faq Section -->
-    <div class="section-full p-t80 p-b50">
-
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-md-12  m-b30">
-                    <!-- TITLE START -->
-                    <div class="section-head text-left">
-                        <h2>FAQ</h2>
-                        <div class="mt-separator-outer">
-                            <div class="mt-separator site-bg-primary"></div>
-                        </div>
-                    </div>
-                    <!-- TITLE END -->
-
-                    <!-- Accordian -->
-
-                    <div class="accordion mt-accordion acc-bg-gray" id="accordionExample">
-                        <!--one-->
-                        <div class="acod-head mt-panel">
-                            <h4 class="accordion-header acod-title" id="headingOne">
-                                <a href="javascript:;" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                                    aria-expanded="true" aria-controls="collapseOne"><i
-                                        class="fa fa-long-arrow-right"></i>
-                                    How do we work?
-                                    <span class="indicator"><i class="fa fa-plus"></i></span>
-                                </a>
-                            </h4>
-                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                                data-bs-parent="#accordionExample">
-                                <div class="acod-body">
-                                    <div class="acod-content p-tb15">Progressively generate synergistic total linkage
-                                        through cross-media intellectual capital. Enthusiastically parallel task team
-                                        building e-tailers without standards compliant initiatives. Progressively
-                                        monetize client-centric outsourcing with excellent communities.</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--Two-->
-                        <div class="acod-head mt-panel">
-                            <h4 class="accordion-header acod-title" id="headingTwo">
-                                <a href="javascript:;" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                    aria-expanded="false" aria-controls="collapseTwo"><i
-                                        class="fa fa-long-arrow-right"></i>
-                                    What services do we offer?
-                                    <span class="indicator"><i class="fa fa-plus"></i></span>
-                                </a>
-                            </h4>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                data-bs-parent="#accordionExample">
-                                <div class="acod-body">
-                                    <div class="acod-content p-tb15">Progressively generate synergistic total linkage
-                                        through cross-media intellectual capital. Enthusiastically parallel task team
-                                        building e-tailers without standards compliant initiatives. Progressively
-                                        monetize client-centric outsourcing with excellent communities.</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--Three-->
-                        <div class="acod-head mt-panel">
-                            <h4 class="accordion-header  acod-title" id="headingThree">
-                                <a href="javascript:;" data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                                    aria-expanded="false" aria-controls="collapseThree"><i
-                                        class="fa fa-long-arrow-right"></i>
-                                    What kind of ships Manufacturing?
-                                    <span class="indicator"><i class="fa fa-plus"></i></span>
-                                </a>
-                            </h4>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                                data-bs-parent="#accordionExample">
-                                <div class="acod-body">
-                                    <div class="acod-content p-tb15">Progressively generate synergistic total linkage
-                                        through cross-media intellectual capital. Enthusiastically parallel task team
-                                        building e-tailers without standards compliant initiatives. Progressively
-                                        monetize client-centric outsourcing with excellent communities.</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--Four-->
-                        <div class="acod-head mt-panel">
-                            <h4 class="accordion-header acod-title" id="headingFour">
-                                <a href="javascript:;" data-bs-toggle="collapse" data-bs-target="#collapseFour"
-                                    aria-expanded="false" aria-controls="collapseFour"><i
-                                        class="fa fa-long-arrow-right"></i>
-                                    How reliable are we?
-                                    <span class="indicator"><i class="fa fa-plus"></i></span>
-                                </a>
-                            </h4>
-                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                                data-bs-parent="#accordionExample">
-                                <div class="acod-body">
-                                    <div class="acod-content p-tb15">Progressively generate synergistic total linkage
-                                        through cross-media intellectual capital. Enthusiastically parallel task team
-                                        building e-tailers without standards compliant initiatives. Progressively
-                                        monetize client-centric outsourcing with excellent communities.</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg 4 col-md-12 m-b30">
-                    <div class="mt-box p-a30 need-help bg-gray">
-                        <h2 class="m-t0">Need any help!</h2>
-                        <p>Find answers to frequently asked questions about Bizipress, contacts and general customer
-                            account information </p>
-                        <div class="mt-icon-box-wraper  p-a20 left bg-white m-b30">
-                            <div class="icon-sm">
-                                <span class="icon-cell site-text-primary"><i class="fa fa-envelope"></i></span>
-                            </div>
-                            <div class="icon-content">
-                                <h5 class="mt-tilte m-b0"><a href="mailto:"></a>agilemarineconsultancy@gmail.com</h5>
-                            </div>
-                        </div>
-                        <div class="mt-icon-box-wraper  p-a20 left bg-white m-b30">
-                            <div class="icon-sm">
-                                <span class="icon-cell site-text-primary"><i class="fa fa-phone"></i></span>
-                            </div>
-                            <div class="icon-content">
-                                <h5 class="mt-tilte m-b0">+971558819616</h5>
-                            </div>
-                        </div>
-
-
-                        <a href="contact-1.html" class="site-button">Contact Us</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-
-    <div class="section-full parlex-sec about-video p-t130 p-b80 overlay-wraper ripples-sec"
-        data-stellar-background-ratio="0.5">
-        <div class="overlay-main bg-secondry  opacity-09"></div>
-        <div class="container text-center ">
-            <div class="text-white help-section">
-                <h2 class="m-b30">Quality never goes out of style.</h2>
-                <h4 class="m-b30"><strong>We take pride in serving our customers safely. We are hear to help you
-                        out.</strong></h4>
-                <a href="#" class="site-button">Contact Us</a>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Blog Section -->
-    <div class="section-full  p-t80 p-b50 bg-white">
-        <div class="container">
-
-            <!-- TITLE START-->
-            <div class="section-head text-center">
-                <h2 data-title="News">Latest News</h2>
-                <div class="mt-separator-outer">
-                    <div class="mt-separator site-bg-primary"></div>
-                </div>
-            </div>
-            <!-- TITLE END-->
-
-            <div class="section-content ">
-                <div class="row blogs-list">
-                    <!-- Block 1 -->
-                    <div class="col-lg-4 col-md-4">
-                        <div class="blog-post latest-blog-1 date-style-1 block-shadow overflow-hide  bg-white m-b30">
-                            <div class="mt-post-media">
-                                <img src="{% static 'assets/images/blog/grid/blog1.png' %}" alt="">
-                            </div>
-                            <div class="mt-post-info  p-a30">
-                                <div class="mt-post-meta bdr-1 bdr-solid bdr-b-1 bdr-gray-light p-b20">
-                                    <ul>
-                                        <li class="post-date"> <i
-                                                class="fa fa-calendar site-text-primary"></i><strong>09</strong><span>
-                                                Oct 2022</span> </li>
-                                        <li class="post-author"><i class="fa fa-user site-text-primary"></i><a
-                                                href="javascript:void(0);">By <span>John</span></a> </li>
-                                        <li class="post-comment"><i class="fa fa-comments site-text-primary"></i> <a
-                                                href="javascript:;">14 Comment</a> </li>
-                                    </ul>
-                                </div>
-
-                                <div class="mt-post-title ">
-                                    <h4 class="post-title">A partnership based trust.</h4>
-                                </div>
-
-                                <div class="mt-post-text">
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                </div>
-                                <a href="#" class="site-button-link">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Block 2 -->
-                    <div class="col-lg-4 col-md-4">
-                        <div class="blog-post latest-blog-1 date-style-1 block-shadow overflow-hide  bg-white m-b30">
-                            <div class="mt-post-media">
-                                <img src="{% static 'assets/images/blog/grid/blog2.png' %}" alt="">
-                            </div>
-                            <div class="mt-post-info  p-a30">
-                                <div class="mt-post-meta bdr-1 bdr-solid bdr-b-1 bdr-gray-light p-b20">
-                                    <ul>
-                                        <li class="post-date"> <i
-                                                class="fa fa-calendar site-text-primary"></i><strong>15</strong><span>
-                                                Oct 2022</span> </li>
-                                        <li class="post-author"><i class="fa fa-user site-text-primary"></i><a
-                                                href="javascript:void(0);">By <span>John</span></a> </li>
-                                        <li class="post-comment"><i class="fa fa-comments site-text-primary"></i> <a
-                                                href="javascript:;">14 Comment</a> </li>
-                                    </ul>
-                                </div>
-
-                                <div class="mt-post-title ">
-                                    <h4 class="post-title">An anchor in a new era.</h4>
-                                </div>
-
-                                <div class="mt-post-text">
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                </div>
-                                <a href="#" class="site-button-link">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Block 3 -->
-                    <div class="col-lg-4 col-md-4">
-                        <div class="blog-post latest-blog-1 date-style-1 block-shadow overflow-hide  bg-white m-b30">
-                            <div class="mt-post-media">
-                                <img src="{% static 'assets/images/blog/grid/blog3.png' %}" alt="">
-                            </div>
-                            <div class="mt-post-info  p-a30">
-                                <div class="mt-post-meta bdr-1 bdr-solid bdr-b-1 bdr-gray-light p-b20">
-                                    <ul>
-                                        <li class="post-date"> <i
-                                                class="fa fa-calendar site-text-primary"></i><strong>20</strong><span>
-                                                Oct 2022</span> </li>
-                                        <li class="post-author"><i class="fa fa-user site-text-primary"></i><a
-                                                href="javascript:void(0);">By <span>John</span></a> </li>
-                                        <li class="post-comment"><i class="fa fa-comments site-text-primary"></i> <a
-                                                href="javascript:;">14 Comment</a> </li>
-                                    </ul>
-                                </div>
-
-                                <div class="mt-post-title ">
-                                    <h4 class="post-title">Fueling your logistic chain.</h4>
-                                </div>
-
-                                <div class="mt-post-text">
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                </div>
-                                <a href="#" class="site-button-link">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-
-
-    <!-- Testimonials -->
-    <div class="section-full p-t80 p-b80 bg-center bg-full-height bg-no-repeat bg-gray"
-        style="background-image:url(static/assets/images/background/bg-map.png);">
-        <div class="container">
-            <!-- TITLE START -->
-            <div class="section-head text-center">
-                <h2 data-title="Testimonials">Our Client Say</h2>
-                <div class="mt-separator-outer">
-                    <div class="mt-separator site-bg-primary"></div>
-                </div>
-            </div>
-            <!-- TITLE END -->
-
-            <div class="section-content">
-                <div class="owl-carousel testimonial-five">
-                    <div class="item">
-                        <div class="testimonial-5 bg-white">
-                            <div class="testimonial-pic-block">
-                                <div class="testimonial-pic">
-                                    <img src="{% static 'assets/images/testimonials/pic1.jpg' %}" alt="">
-                                </div>
-                            </div>
-                            <div class="testimonial-text clearfix">
-                                <div class="testimonial-paragraph">
-                                    <span class="fa fa-quote-left site-text-primary"></span>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-                                        industry.industry's standard dummy text ever since the 1500.
-                                    </p>
-                                </div>
-                                <div class="testimonial-detail clearfix">
-                                    <strong class="testimonial-name">Devid Smith</strong>
-                                    <span class="testimonial-position site-text-primary p-t10">Manager</span>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="testimonial-5 bg-white">
-                            <div class="testimonial-pic-block">
-                                <div class="testimonial-pic">
-                                    <img src="{% static 'assets/images/testimonials/pic2.jpg' %}" alt="">
-                                </div>
-                            </div>
-                            <div class="testimonial-text clearfix">
-                                <div class="testimonial-paragraph">
-                                    <span class="fa fa-quote-left site-text-primary"></span>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-                                        industry.industry's standard dummy text ever since the 1500.
-                                    </p>
-                                </div>
-                                <div class="testimonial-detail clearfix">
-                                    <strong class="testimonial-name">Jon Doe</strong>
-                                    <span class="testimonial-position site-text-primary p-t10">Manager</span>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="testimonial-5 bg-white">
-                            <div class="testimonial-pic-block">
-                                <div class="testimonial-pic">
-                                    <img src="{% static 'assets/images/testimonials/pic1.jpg' %}" alt="">
-                                </div>
-                            </div>
-                            <div class="testimonial-text clearfix">
-                                <div class="testimonial-paragraph">
-                                    <span class="fa fa-quote-left site-text-primary"></span>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-                                        industry.industry's standard dummy text ever since the 1500. </p>
-                                </div>
-                                <div class="testimonial-detail clearfix">
-                                    <strong class="testimonial-name">Poul Smith</strong>
-                                    <span class="testimonial-position site-text-primary p-t10">Manager</span>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
 </div>
+<!-- End Banner -->
+
+<!-- Start About
+    ============================================= -->
+<div class="about-style-two-area bg-gray default-padding">
+    <div class="container">
+        <div class="row align-center">
+            <div class="col-lg-6 about-style-two">
+                <div class="thumb">
+                    <img src="{% static 'assets/img/800x800.png' %}" alt="Thumb">
+                    <img src="{% static 'assets/img/800x800.png' %}" alt="Thumb">
+                    <div class="fun-fact">
+                        <div class="counter">
+                            <div class="timer" data-to="50" data-speed="5000">50</div>
+                            <div class="operator">+</div>
+                        </div>
+                        <span class="medium">Team Member</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 about-style-three">
+                <h4 class="sub-heading">About Cleaning Agency </h4>
+                <h2 class="heading">We are committed to give <br> our best services</h2>
+                <p>
+                    Friendly bachelor entrance to on by. Extremity as if breakfast agreement. Off now mistress provided
+                    out horrible opinions. Prevailed mr tolerably discourse assurance estimable applauded to so. Him
+                    everything melancholy uncommonly but solicitude inhabiting projection.
+                </p>
+                <ul>
+                    <li>Service Monitoring</li>
+                    <li>Fast Communication</li>
+                    <li>Customer Support Live Chat</li>
+                    <li>Information for Any Services</li>
+                </ul>
+                <a class="btn btn-theme primary effect btn-md" href="#">Contact Us</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End About -->
+
+<!-- Start why choose us Area 
+    ============================================= -->
+<div class="features-area default-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <div class="site-heading text-center">
+                    <h4>Why Choose Us</h4>
+                    <h2>Our Most Popular <br> Plumbing Services For You</h2>
+                    <div class="devider"></div>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id tenetur temporibus, distinctio iste
+                        recusandae magni provident nam fuga perferendis molestiae et hic non expedita eos velit maxime
+                        libero quos? Et.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="features-items text-center">
+            <div class="row align-center">
+                <!-- Single Item -->
+                <div class="single-item col-lg-4 col-md-12">
+                    <div class="item">
+                        <div class="top">
+                            <i class="flaticon-cleaning-service"></i>
+                            <h4>Expert Employee</h4>
+                        </div>
+                        <p>
+                            Prevailed mr tolerably discourse assurance estimable applauded to points.
+                        </p>
+                    </div>
+                    <div class="item">
+                        <div class="top">
+                            <i class="flaticon-carpet-2"></i>
+                            <h4>Modern Tools</h4>
+                        </div>
+                        <p>
+                            Prevailed mr tolerably discourse assurance estimable applauded to points.
+                        </p>
+                    </div>
+                </div>
+                <!-- End Single Item -->
+                <!-- Single Item -->
+                <div class="single-item award col-lg-4 col-md-12">
+                    <div class="item text-center">
+                        <i class="fas fa-medal"></i>
+                        <h2><strong>The best</strong> Cleaning service</h2>
+                    </div>
+                </div>
+                <!-- End Single Item -->
+                <!-- Single Item -->
+                <div class="single-item col-lg-4 col-md-12">
+                    <div class="item">
+                        <div class="top">
+                            <i class="flaticon-thumbs-up"></i>
+                            <h4>Qualified & Expert</h4>
+                        </div>
+                        <p>
+                            Prevailed mr tolerably discourse assurance estimable applauded to points.
+                        </p>
+                    </div>
+                    <div class="item">
+                        <div class="top">
+                            <i class="flaticon-best-price-2"></i>
+                            <h4>Comfortable Price</h4>
+                        </div>
+                        <p>
+                            Prevailed mr tolerably discourse assurance estimable applauded to points.
+                        </p>
+                    </div>
+                </div>
+                <!-- End Single Item -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Features Area -->
+
+<!-- Start Fun Factor Area
+    ============================================= -->
+<div class="fun-factor-area bg-theme text-light">
+    <div class="container">
+        <div class="fun-fact-items text-center default-padding">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 item">
+                    <div class="fun-fact">
+                        <div class="counter">
+                            <div class="timer" data-to="1267" data-speed="5000">1267</div>
+                            <div class="operator">+</div>
+                        </div>
+                        <span class="medium">Orders</span>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 item">
+                    <div class="fun-fact">
+                        <div class="counter">
+                            <div class="timer" data-to="846" data-speed="5000">846</div>
+                            <div class="operator">+</div>
+                        </div>
+                        <span class="medium">Trusted Clients</span>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 item">
+                    <div class="fun-fact">
+                        <div class="counter">
+                            <div class="timer" data-to="36" data-speed="5000">36</div>
+                            <div class="operator">+</div>
+                        </div>
+                        <span class="medium">Years Of Experience</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fixed BG -->
+    <div class="fixed-bg" style="background-image: url({% static 'assets/img/shape/29.png' %});"></div>
+    <!-- Fixed BG -->
+</div>
+<!-- End Fun Factor Area -->
+
+<!-- Start work Process Area
+    ============================================= -->
+<div class="work-process-area text-center default-padding-bottom ">
+    <!-- Shape -->
+    <div class="shape">
+        <img src="{% static 'assets/img/shape/13.png' %}" alt="Shape">
+    </div>
+    <!-- End Shape -->
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-lg-8 offset-lg-2">
+                <div class="site-heading text-center">
+                    <h4>Work Process</h4>
+                    <h2>How it Works</h2>
+                    <div class="devider"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="process-items">
+            <div class="row">
+                <!-- Single Item -->
+                <div class="single-item col-lg-4 col-md-6">
+                    <div class="item">
+                        <div class="thumb">
+                            <img src="{% static 'assets/img/800x800.png' %}" alt="Thumb">
+                            <span>01</span>
+                        </div>
+                        <h5>Book Online Form</h5>
+                    </div>
+                </div>
+                <!-- End Single Item -->
+                <!-- Single Item -->
+                <div class="single-item col-lg-4 col-md-6">
+                    <div class="item">
+                        <div class="thumb">
+                            <img src="{% static 'assets/img/800x800.png' %}" alt="Thumb">
+                            <span>02</span>
+                        </div>
+                        <h5>Get expert cleaner</h5>
+                    </div>
+                </div>
+                <!-- End Single Item -->
+                <!-- Single Item -->
+                <div class="single-item col-lg-4 col-md-6">
+                    <div class="item">
+                        <div class="thumb">
+                            <img src="{% static 'assets/img/800x800.png' %}" alt="Thumb">
+                            <span>03</span>
+                        </div>
+                        <h5>Relax & enjoy cleanin</h5>
+                    </div>
+                </div>
+                <!-- End Single Item -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Process Area -->
+
+<!-- Start Services Area 
+    ============================================= -->
+<div class="services-style-four-area default-padding bg-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <div class="site-heading text-center">
+                    <h4>What we do</h4>
+                    <h2>Our Most Popular <br> Plumbing Services For You</h2>
+                    <div class="devider"></div>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id tenetur temporibus, distinctio iste
+                        recusandae magni provident nam fuga perferendis molestiae et hic non expedita eos velit maxime
+                        libero quos? Et.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 mb-3">
+                <div class="services-style-four">
+                    <div class="thumb">
+                        <img src="{% static 'assets/img/800x600.png' %}" alt="Thumb">
+                        <i class="fas fa-sink"></i>
+                        <div class="shape" style="background-image: url({% static 'assets/img/shape/brush.png' %});">
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h4><a href="#">Kitchen Plumbing</a></h4>
+                        <p>
+                            Continue indulged speaking the man horrible for domestic position. Seeing rather her you not
+                            esteem men settle.
+                        </p>
+                        <a class="btn-common" href="#">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-3">
+                <div class="services-style-four">
+                    <div class="thumb">
+                        <img src="{% static 'assets/img/800x600.png' %}" alt="Thumb">
+                        <i class="fas fa-sink"></i>
+                        <div class="shape" style="background-image: url({% static 'assets/img/shape/brush.png' %});">
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h4><a href="#">Kitchen Plumbing</a></h4>
+                        <p>
+                            Continue indulged speaking the man horrible for domestic position. Seeing rather her you not
+                            esteem men settle.
+                        </p>
+                        <a class="btn-common" href="#">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-3">
+                <div class="services-style-four">
+                    <div class="thumb">
+                        <img src="{% static 'assets/img/800x600.png' %}" alt="Thumb">
+                        <i class="fas fa-sink"></i>
+                        <div class="shape" style="background-image: url({% static 'assets/img/shape/brush.png' %});">
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h4><a href="#">Kitchen Plumbing</a></h4>
+                        <p>
+                            Continue indulged speaking the man horrible for domestic position. Seeing rather her you not
+                            esteem men settle.
+                        </p>
+                        <a class="btn-common" href="#">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-3">
+                <div class="services-style-four">
+                    <div class="thumb">
+                        <img src="{% static 'assets/img/800x600.png' %}" alt="Thumb">
+                        <i class="fas fa-sink"></i>
+                        <div class="shape" style="background-image: url({% static 'assets/img/shape/brush.png' %});">
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h4><a href="#">Kitchen Plumbing</a></h4>
+                        <p>
+                            Continue indulged speaking the man horrible for domestic position. Seeing rather her you not
+                            esteem men settle.
+                        </p>
+                        <a class="btn-common" href="#">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-3">
+                <div class="services-style-four">
+                    <div class="thumb">
+                        <img src="{% static 'assets/img/800x600.png' %}" alt="Thumb">
+                        <i class="fas fa-sink"></i>
+                        <div class="shape" style="background-image: url({% static 'assets/img/shape/brush.png' %});">
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h4><a href="#">Kitchen Plumbing</a></h4>
+                        <p>
+                            Continue indulged speaking the man horrible for domestic position. Seeing rather her you not
+                            esteem men settle.
+                        </p>
+                        <a class="btn-common" href="#">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-3">
+                <div class="services-style-four">
+                    <div class="thumb">
+                        <img src="{% static 'assets/img/800x600.png' %}" alt="Thumb">
+                        <i class="fas fa-sink"></i>
+                        <div class="shape" style="background-image: url({% static 'assets/img/shape/brush.png' %});">
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h4><a href="#">Kitchen Plumbing</a></h4>
+                        <p>
+                            Continue indulged speaking the man horrible for domestic position. Seeing rather her you not
+                            esteem men settle.
+                        </p>
+                        <a class="btn-common" href="#">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-3">
+                <div class="services-style-four">
+                    <div class="thumb">
+                        <img src="{% static 'assets/img/800x600.png' %}" alt="Thumb">
+                        <i class="fas fa-sink"></i>
+                        <div class="shape" style="background-image: url({% static 'assets/img/shape/brush.png' %});">
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h4><a href="#">Kitchen Plumbing</a></h4>
+                        <p>
+                            Continue indulged speaking the man horrible for domestic position. Seeing rather her you not
+                            esteem men settle.
+                        </p>
+                        <a class="btn-common" href="#">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-3">
+                <div class="services-style-four">
+                    <div class="thumb">
+                        <img src="{% static 'assets/img/800x600.png' %}" alt="Thumb">
+                        <i class="fas fa-sink"></i>
+                        <div class="shape" style="background-image: url({% static 'assets/img/shape/brush.png' %});">
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h4><a href="#">Kitchen Plumbing</a></h4>
+                        <p>
+                            Continue indulged speaking the man horrible for domestic position. Seeing rather her you not
+                            esteem men settle.
+                        </p>
+                        <a class="btn-common" href="#">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-3">
+                <div class="services-style-four">
+                    <div class="thumb">
+                        <img src="{% static 'assets/img/800x600.png' %}" alt="Thumb">
+                        <i class="fas fa-sink"></i>
+                        <div class="shape" style="background-image: url({% static 'assets/img/shape/brush.png' %});">
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h4><a href="#">Kitchen Plumbing</a></h4>
+                        <p>
+                            Continue indulged speaking the man horrible for domestic position. Seeing rather her you not
+                            esteem men settle.
+                        </p>
+                        <a class="btn-common" href="#">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</div>
+<!-- End Services Area -->
+
+<!-- Start call to action 
+    ============================================= -->
+<div class="choseus-style-one-area bg-fixed default-padding"
+    style="background-image: url(./static/assets/img/thumb-2.jpg)">
+    <div class="angle-shape"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 offset-lg-5 col-md-7 offset-md-5">
+                <div class="row">
+                    <div class="col-lg-8 choose-style-one">
+                        <h5 class="sub-heading"></h5>
+                        <h2 class="heading">Quality in Cleaning Services Reasons to Choose Us </h2>
+                        <ul>
+                            <li>
+                                <div class="icon">
+                                    <i class="flaticon-toilet-brush"></i>
+                                </div>
+                                <div class="info">
+                                    <h4>Top-Rated Company</h4>
+                                    <p>
+                                        Champions professionalism in the cleaning industry by providing top quality
+                                        cleaning.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <i class="flaticon-cleaning-service"></i>
+                                </div>
+                                <div class="info">
+                                    <h4>Expert Cleaner</h4>
+                                    <p>
+                                        Professionalism in the cleaning industry by providing top quality cleaning and
+                                        related.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End call to action  -->
+
+<!-- Start Testimonials Area 
+    ============================================= -->
+<div class="testimonials-area overflow-hidden carousel-shadow relative half-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 mt-5">
+                <div class="site-heading text-center">
+                    <h4>Testimonials</h4>
+                    <h2>What’s Client’s Say About Us</h2>
+                    <div class="devider"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mb-5">
+        <div class="testimonial-items">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="testimonial-carousel owl-carousel owl-theme">
+                        <!-- Signle Item -->
+                        <div class="item">
+                            <img src="{% static 'assets/img/800x800.png' %}" alt="Thumb">
+                            <div class="content">
+                                <img src="{% static 'assets/img/shape/quote.png' %}" alt="Quote">
+                                <p>
+                                    Friendly bachelor entrance to on by. Extremity as if breakfast agreement. Off now
+                                    mistress provided out horrible opinions. Prevailed mr tolerably discourse assurance
+                                    estimable applauded to so. Him everything melancholy uncommonly but solicitude
+                                    inhabiting projection. Everything melancholy uncommonly but solicitude inhabiting
+                                    projection. discourse assurance estimable applauded to points.
+                                </p>
+                                <div class="provider">
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <h5>Mulias Prosva</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Signle Item -->
+                        <!-- Signle Item -->
+                        <div class="item">
+                            <img src="{% static 'assets/img/800x800.png' %}" alt="Thumb">
+                            <div class="content">
+                                <img src="{% static 'assets/img/shape/quote.png' %}" alt="Quote">
+                                <p>
+                                    Best bachelor entrance to on by. Extremity as if breakfast agreement. Off now
+                                    mistress provided out horrible opinions. Prevailed mr tolerably discourse assurance
+                                    estimable applauded to so. Him everything melancholy uncommonly but solicitude
+                                    inhabiting projection. Everything melancholy uncommonly but solicitude inhabiting
+                                    projection. discourse assurance estimable applauded to points.
+                                </p>
+                                <div class="provider">
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <h5>Mulias Prosva</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Signle Item -->
+                        <!-- Signle Item -->
+                        <div class="item">
+                            <img src="{% static 'assets/img/800x800.png' %}" alt="Thumb">
+                            <div class="content">
+                                <img src="{% static 'assets/img/shape/quote.png' %}" alt="Quote">
+                                <p>
+                                    Best bachelor entrance to on by. Extremity as if breakfast agreement. Off now
+                                    mistress provided out horrible opinions. Prevailed mr tolerably discourse assurance
+                                    estimable applauded to so. Him everything melancholy uncommonly but solicitude
+                                    inhabiting projection. Everything melancholy uncommonly but solicitude inhabiting
+                                    projection. discourse assurance estimable applauded to points.
+                                </p>
+                                <div class="provider">
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <h5>Mulias Prosva</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Signle Item -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Testimonials Area  -->
+<!-- Start Fa   
+    ============================================= -->
+<div class="faq-area default-padding bg-cover" style="background-image: url({% static 'assets/img/2440x1578.png' %});">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="faq-style-one">
+                    <div class="faq-content">
+                        <div class="accordion" id="accordionExample">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h4 class="mb-0" data-toggle="collapse" data-target="#collapseOne"
+                                        aria-expanded="true" aria-controls="collapseOne">
+                                        How do I make a checklist for a cleaning service?
+                                    </h4>
+                                </div>
+
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <h5>Bedrooms, living areas and other rooms</h5>
+                                        <ol>
+                                            <li>Dust furniture tops, sides and fronts.</li>
+                                            <li>Vacuum and/or mop floors.</li>
+                                            <li>Clean glass surfaces and mirrors.</li>
+                                            <li>Wipe window sills and blinds.</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h4 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                                        aria-expanded="false" aria-controls="collapseTwo">
+                                        How do you clean efficiently?
+                                    </h4>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <h5>Fast House Cleaning Tips</h5>
+                                        <ol>
+                                            <li>Clean the whole house, not one room at time</li>
+                                            <li>Gather all your cleaning tools in a caddy.</li>
+                                            <li>Clear the clutter.</li>
+                                            <li>Disinfect countertops and surface areas</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h4 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseThree"
+                                        aria-expanded="false" aria-controls="collapseThree">
+                                        What are the benefits of cleaning?
+                                    </h4>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <h5>4 Surprising Health Benefits of a Clean Home</h5>
+                                        <ol>
+                                            <li>It Keeps You Mentally Healthy</li>
+                                            <li>It Pests Keep Away.</li>
+                                            <li>The Home is Inviting.</li>
+                                            <li>Tips For Keeping Your Home Clean.</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Faq -->
+<!-- Start Blog 
+    ============================================= -->
+<div class="blog-area grid-style default-padding bottom-less">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <div class="site-heading text-center">
+                    <h4>From the blog</h4>
+                    <h2>Latest News & Articles</h2>
+                    <div class="devider"></div>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id tenetur temporibus, distinctio iste
+                        recusandae magni provident nam fuga perferendis molestiae et hic non expedita eos velit maxime
+                        libero quos? Et.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="blog-items ">
+            <div class="row">
+                <!-- Single Itme -->
+                <div class="single-item col-lg-4 col-md-6 rounded">
+                    <div class="item">
+                        <div class="thumb">
+                            <img src="{% static 'assets/img/800x600.png' %}" alt="Thumb">
+                            <div class="date">January 25, 2022</div>
+                        </div>
+                        <div class="info">
+                            <div class="meta">
+                                <ul>
+                                    <li>
+                                        <span>By </span>
+                                        <a href="#">John Baus</a>
+                                    </li>
+                                    <li>
+                                        <span>In </span>
+                                        <a href="#">Agency</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <h4><a href="blog-single-with-sidebar.html">Discovery incommode earnestly commanded
+                                    mentions.</a></h4>
+                            <p>
+                                Etensive repulsive belonging depending promotion be zealously as. Preference point
+                                inquietude ask now are dispatched.
+                            </p>
+                            <a href="blog-single-with-sidebar.html" class="btn-simple"><i class="fas fa-plus"></i> Read
+                                More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Itme -->
+                <!-- Single Itme -->
+                <div class="single-item col-lg-4 col-md-6 rounded">
+                    <div class="item">
+                        <div class="thumb">
+                            <img src="{% static 'assets/img/800x600.png' %}" alt="Thumb">
+                            <div class="date">April 18, 2022</div>
+                        </div>
+                        <div class="info">
+                            <div class="meta">
+                                <ul>
+                                    <li>
+                                        <span>By </span>
+                                        <a href="#">Monus Botha</a>
+                                    </li>
+                                    <li>
+                                        <span>In </span>
+                                        <a href="#">Agency</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <h4><a href="blog-single-with-sidebar.html">Everything melancholy uncommonly but
+                                    solicitude.</a></h4>
+                            <p>
+                                Etensive repulsive belonging depending promotion be zealously as. Preference point
+                                inquietude ask now are dispatched.
+                            </p>
+                            <a href="blog-single-with-sidebar.html" class="btn-simple"><i class="fas fa-plus"></i> Read
+                                More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Itme -->
+                <!-- Single Itme -->
+                <div class="single-item col-lg-4 col-md-6 rounded">
+                    <div class="item">
+                        <div class="thumb">
+                            <img src="{% static 'assets/img/800x600.png' %}" alt="Thumb">
+                            <div class="date">Auguest 14, 2022</div>
+                        </div>
+                        <div class="info">
+                            <div class="meta">
+                                <ul>
+                                    <li>
+                                        <span>By </span>
+                                        <a href="#">Mills Paul</a>
+                                    </li>
+                                    <li>
+                                        <span>In </span>
+                                        <a href="#">Agency</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <h4><a href="blog-single-with-sidebar.html">Providing top quality cleaning and related
+                                    services charms.</a></h4>
+                            <p>
+                                Etensive repulsive belonging depending promotion be zealously as. Preference point
+                                inquietude ask now are dispatched.
+                            </p>
+                            <a href="blog-single-with-sidebar.html" class="btn-simple"><i class="fas fa-plus"></i> Read
+                                More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Itme -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Blog Area  -->
 
 {% endblock %}

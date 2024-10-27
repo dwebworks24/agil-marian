@@ -8,8 +8,8 @@ urlpatterns = [
     path('about-us/', about, name="about-us"),
     path('services/', services, name="services"),
     path('services-details/', service_details, name="services_details"),
-    path('blogs/', blogs, name="blogs"),
+    path('news-articles/', news_articles, name="news_articles"),
     path('blog-details/', blog_details, name="blogs-details"),
-    path('career/',career,name="career"),
     path('contact-us/', contact, name="contact-us"),
+    # path('career/',career,name="career"),
 ]

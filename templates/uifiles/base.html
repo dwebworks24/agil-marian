@@ -2,348 +2,319 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
-<!-- Mirrored from theme7x.com/fastway/index-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 02 Jul 2024 07:06:41 GMT -->
-
 <head>
-
-    <!-- Meta -->
+    <!-- ========== Meta Tags ========== -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="keywords" content="" />
-    <meta name="author" content="" />
-    <meta name="robots" content="" />
-    <meta name="description" content="" />
-
-    <link rel="icon" href="{% static  'assets/images/circle-logo.png' %}" type="image/x-icon" />
-    <link rel="shortcut icon" type="image/x-icon" href="{% static  'assets/images/circle-logo.png' %}" />
-
-    <title> {% block title %}{% endblock %} | Agil Marian </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Cleanu - Cleaning Services Template">
 
+    <!-- ========== Page Title ========== -->
+    <title> {% block title %}{% endblock %} | Agil Marian </title>
 
+    <!-- ========== Favicon Icon ========== -->
+    <link rel="shortcut icon" href="{% static 'assets/img/favicon.png' %}" type="image/x-icon">
 
-    <link rel="stylesheet" type="text/css" href="{% static  'assets/css/bootstrap.min.css' %}"><!-- Bootstrap Css-->
-    <link rel="stylesheet" type="text/css" href="{% static  'assets/css/fontawesome/css/font-awesome.min.css' %}" />
-    <!-- Fontawesome Css -->
-    <link rel="stylesheet" type="text/css" href="{% static  'assets/css/flaticon.min.css' %}"><!-- Flaticon Css-->
-    <link rel="stylesheet" type="text/css" href="{% static  'assets/css/owl.carousel.min.css' %}">
-    <!-- Owl Carousel Css -->
-    <link rel="stylesheet" type="text/css" href="{% static  'assets/css/magnific-popup.min.css' %}">
-    <!-- Magnific Popup Css -->
-    <link rel="stylesheet" type="text/css" href="{% static  'assets/css/loader.min.css' %}"><!-- Loader Css-->
-    <link rel="stylesheet" type="text/css" href="{% static  'assets/css/style.css' %}"><!-- Main Style Css -->
-    <link rel="stylesheet" type="text/css" href="{% static  'assets/css/custom.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static  'assets/css/about.css' %}"><!-- Custom Css-->
-    <link rel="stylesheet" type="text/css" href="{% static  'assets/plugins/revolution/revolution/css/settings.css' %}">
-    <!-- Revolution Slider Css -->
-    <link rel="stylesheet" type="text/css"
-        href="{% static  'assets/plugins/revolution/revolution/css/navigation.css' %}"><!-- Revolution Slider Css -->
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&amp;display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
-        rel="stylesheet">
-
-    <!---- animation cdn ------>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
-
+    <!-- ========== Start Stylesheet ========== -->
+    <link href="{% static 'assets/css/bootstrap.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/font-awesome.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/themify-icons.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/elegant-icons.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/flaticon-set.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/magnific-popup.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/owl.carousel.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/owl.theme.default.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/animate.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/bootsnav.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/css/about.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/css/responsive.css' %}" rel="stylesheet" />
     {% block stylesheets %}{% endblock stylesheets %}
+    <!-- ========== End Stylesheet ========== -->
 
 </head>
 
-<body id="bg">
+<body>
 
-    <div class="page-wraper">
+    <!-- Preloader Start -->
+    <!-- <div class="se-pre-con"></div> -->
+    <!-- Preloader Ends -->
 
-        <!-- Header -->
-        <header class="site-header header-style-2 topbar-transparent mobile-sider-drawer-menu ripples-sec">
-            <div class="sticky-header main-bar-wraper">
-                <div class="main-bar">
-                    <div class="container">
-                        <div class="logo-header">
-                            <a href="index.html">
-                                <img src="{% static  'assets/images/logo-dark.png' %}" width="216" height="37" alt="" />
-                            </a>
-                        </div>
-
-                        <!-- NAV Toggle Button -->
-                        <button id="mobile-side-drawer" data-target=".header-nav" data-toggle="collapse" type="button"
-                            class="navbar-toggler collapsed">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar icon-bar-first"></span>
-                            <span class="icon-bar icon-bar-two"></span>
-                            <span class="icon-bar icon-bar-three"></span>
-                        </button>
-
-
-                        <div id="search">
-                            <span class="close"></span>
-                            <form role="search" id="searchform" action="https://theme7x.com/search" method="get"
-                                class="radius-xl">
-                                <div class="input-group">
-                                    <input value="" name="q" type="search" placeholder="Type to search" />
-                                    <span class="input-group-btn"><button type="button" class="search-btn"><i
-                                                class="fa fa-search"></i></button></span>
-                                </div>
-                            </form>
-                        </div>
-
-                        <!-- MAIN Vav -->
-                        <div class="header-nav navbar-collapse ">
-                            <ul class=" nav navbar-nav">
-                                <li class="active">
-                                    <a href="/">Home</a>
-                                </li>
-                                <li>
-                                    <a href="/about-us/">About us</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:;">Services<i class="fa fa-chevron-down"></i></a>
-                                    <ul class="sub-menu">
-                                        <li><a href="/services-details/">Naval Architecture & Basic Design of Ships</a>
-                                        </li>
-                                        <li><a href="/services-details/">SProject Management and Consultancy</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="/blogs/">Blogs</a>
-                                </li>
-                                <li>
-                                    <a href="/career/">Career</a>
-                                </li>
-                                <li>
-                                    <a href="/contact-us/">Contact us</a>
-                                </li>
-
-
-
-                            </ul>
-                        </div>
-
-
-                    </div>
+    <!-- Start Header Top 
+    ============================================= -->
+    <!-- <div class="top-bar-area inc-pad bg-theme text-light inc-shape">
+        <div class="container-full">
+            <div class="row align-center">
+                <div class="col-lg-8 info">
+                    <ul>
+                        <li>
+                            <i class="fas fa-envelope-open-text"></i> Info@gmail.com
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i> Working Hours: 8:00 AM – 7:45 PM
+                        </li>
+                    </ul>
                 </div>
-            </div>
-
-        </header>
-
-        <!-- main content  -->
-        {% block content %}
-        {% endblock %}
-        <!-- main content end  -->
-
-        <!-- Footer Part-->
-        <footer class="site-footer footer-dark">
-            <!-- Footer Top Part -->
-            <div class="footer-top overlay-wraper">
-                <div class="overlay-main"></div>
-                <div class="container">
-                    <div class="row">
-                        <!-- About -->
-                        <div class="col-lg-3 col-md-6">
-                            <div class="widget widget_about text-white">
-                                <h4 class="widget-title">About Company</h4>
-                                <div class="logo-footer bg-light rounded ">
-                                    <a href="/"><img src="{% static 'assets/images/logo-dark.png' %}"
-                                            alt="logo-dark" width="100" style="width: 100%;"/>
-                                    </a>
-                                </div>
-                                <p>At agile marine consultancy, we deliver a broad spectrum of expert services tailored
-                                    to the maritime industry's needs. Our experienced professionals offer innovative
-                                    solutions and specialized consultancy to address each client's unique challenges
-                                    effectively.</p>
-                                
-                            </div>
-                        </div>
-                        <!-- Useful Links -->
-                        <div class="col-lg-3 col-md-6">
-                            <div class="widget widget_services text-white">
-                                <h4 class="widget-title">Useful links</h4>
-                                <ul>
-                                    <li><a href="about-1.html">About</a></li>
-                                    <li><a href="faq-1.html">FAQ</a></li>
-                                    <li><a href="our-team.html">Our Team</a></li>
-                                    <li><a href="services.html">Services</a></li>
-                                    <li><a href="gallery-grid-1.html">Gallery</a></li>
-                                    <li><a href="product.html">Shop</a></li>
-                                    <li><a href="blog-grid.html">Blog</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- Resent Post -->
-                        <div class="col-lg-3 col-md-6">
-                            <div class="widget recent-posts-entry-date">
-                                <h4 class="widget-title">Resent Post</h4>
-                                <div class="widget-post-bx">
-                                    <div class="widget-post clearfix">
-                                        <div class="mt-post-media text-white  overflow-hide">
-                                            <img src="{% static  'assets/images/blog/recent-blog/pic1.jpg' %}" alt="">
-                                        </div>
-                                        <div class="mt-post-info">
-                                            <div class="mt-post-header">
-                                                <div class="post-title"><a href="blog-single.html">A partnership based
-                                                        trust.</a></div>
-                                            </div>
-                                            <div class="mt-post-meta">
-                                                <ul>
-                                                    <li class="post-author"><i
-                                                            class="fa fa-user site-text-primary"></i>By Admin</li>
-                                                    <li class="post-comment"><i
-                                                            class="fa fa-comments site-text-primary"></i> 28</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="widget-post clearfix">
-                                        <div class="mt-post-media  text-white  overflow-hide">
-                                            <img src="{% static  'assets/images/blog/recent-blog/pic2.jpg' %}" alt="">
-                                        </div>
-                                        <div class="mt-post-info">
-                                            <div class="mt-post-header">
-                                                <div class="post-title"><a href="blog-single.html">For the men in charge
-                                                        life. </a></div>
-                                            </div>
-                                            <div class="mt-post-meta">
-                                                <ul>
-                                                    <li class="post-author"><i
-                                                            class="fa fa-user site-text-primary"></i>By Admin</li>
-                                                    <li class="post-comment"><i
-                                                            class="fa fa-comments site-text-primary"></i> 29</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="widget-post clearfix">
-                                        <div class="mt-post-media  text-white  overflow-hide">
-                                            <img src="{% static  'assets/images/blog/recent-blog/pic3.jpg' %}" alt="">
-                                        </div>
-                                        <div class="mt-post-info">
-                                            <div class="mt-post-header">
-                                                <div class="post-title"><a href="blog-single.html">Fueling your logistic
-                                                        chain.</a></div>
-                                            </div>
-                                            <div class="mt-post-meta">
-                                                <ul>
-                                                    <li class="post-author"><i
-                                                            class="fa fa-user site-text-primary"></i>By Admin</li>
-                                                    <li class="post-comment"><i
-                                                            class="fa fa-comments site-text-primary"></i> 30</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Instagram Feed -->
-                        <div class="col-lg-3 col-md-6">
-                            <div class="widget widget_newsletter f-news-letter text-white">
-                                <h4 class="widget-title">Newsletter</h4>
-                                <div class="newsletter-bx m-b30">
-                                    <form role="search" method="post">
-                                        <div class="input-group">
-                                            <input name="news-letter" class="form-control"
-                                                placeholder="ENTER YOUR EMAIL" type="text">
-                                            <span class="input-group-btn">
-                                                <button type="submit" class="site-button btn font-weight-600"><i
-                                                        class="fa fa-paper-plane"></i></button>
-                                            </span>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="widget widget_gallery1 mfp-gallery clearfix">
-                                <h4 class="widget-title">connect us</h4>
-                                <ul>
-                                    <li> <i class="fa fa-phone site-text-primary"></i> <b class="p-lr5 text-uppercase">Tel :</b> (987) 654-3210 </li>
-                                    <li><i class="fa fa-envelope site-text-primary"></i> <b class="p-lr5 text-uppercase">Email :
-                                        </b>7xthemehelp@gmail.com</li>
-                                    <li><i class="fa fa-location-arrow site-text-primary"></i> <b class="p-lr5 text-uppercase">Location :</b> Street 4
-                                        ,45 Ny City</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Footer Copyright Part -->
-            <div class="footer-bottom overlay-wraper">
-                <div class="overlay-main"></div>
-                <div class="container p-t30">
-                    <div class="mt-footer-bot-center">
-                        <span class="copyrights-text">© 2024 Your agile marine consultancy. All Rights Reserved.
-                            Designed By
-                            dwebworks</span>
-                    </div>
-                </div>
-            </div>
-        </footer>
-
-        <!-- Scroll Top Button -->
-        <button class="scroltop">
-            <span class="fa fa-space-shuttle relative" id="btn-vibrate"></span>
-        </button>
-
-
-    </div>
-
-    <!-- <div class="loading-area">
-        <div class="loading-box"></div>
-        <div class="loading-pic">
-            <div class="loading_progress-container">
-                <div class="loading_progress">
-                    <div class="loading_compass">
-                        <div class="loading_compass-ring">
-                            <div class="loading_compass-label loading_compass-n">N</div>
-                            <div class="loading_compass-label loading_compass-s">S</div>
-                            <div class="loading_compass-label loading_compass-e">E</div>
-                            <div class="loading_compass-label loading_compass-w">W</div>
-                        </div>
-                        <div class="loading_compass-needle">
-                            <div class="loading_compass-needle-arrow"></div>
-                        </div>
-                        <div class="loading_compass-center"></div>
+                <div class="col-lg-4 text-right item-flex">
+                    <div class="social">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div> -->
+    <!-- End Header Top -->
 
-    <!-- Loading Div ====== -->
+    <!-- Header 
+    ============================================= -->
+    <header id="home">
 
-    <!-- JAVASCRIPT  FILES ========================================= -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="{% static  'assets/js/jquery-3.6.1.min.js' %}"></script>
-    <script src="{% static  'assets/js/popper.min.js' %}"></script><!-- POPPER.MIN JS -->
-    <script src="{% static  'assets/js/bootstrap.min.js' %}"></script><!-- BOOTSTRAP.MIN JS -->
-    <script src="{% static  'assets/js/jquery.bootstrap-touchspin.min.js' %}"></script><!-- FORM JS -->
-    <script src="{% static  'assets/js/magnific-popup.min.js' %}"></script><!-- MAGNIFIC-POPUP JS -->
-    <script src="{% static  'assets/js/waypoints.min.js' %}"></script><!-- WAYPOINTS JS -->
-    <script src="{% static  'assets/js/counterup.min.js' %}"></script><!-- COUNTERUP JS -->
-    <script src="{% static  'assets/js/waypoints-sticky.min.js' %}"></script><!-- COUNTERUP JS -->
-    <script src="{% static  'assets/js/isotope.pkgd.min.js' %}"></script><!-- MASONRY  -->
-    <script src="{% static  'assets/js/imagesloaded.pkgd.min.js' %}"></script><!-- MASONRY  -->
-    <script src="{% static  'assets/js/owl.carousel.min.js' %}"></script><!-- OWL  SLIDER  -->
-    <script src="{% static  'assets/js/jquery.owl-filter.js' %}"></script><!-- OWL  SLIDER  -->
-    <script src="{% static  'assets/js/custom.js' %}"></script><!-- CUSTOM FUCTIONS  -->
-    <script src="{% static  'assets/js/jquery.bgscroll.js' %}"></script><!-- BACKGROUND SCROLL -->
+        <!-- Start Navigation -->
+        <nav class="navbar navbar-default navbar-sticky dark bootsnav">
 
+            <div class="container-full">
+
+                <div class="row align-center">
+
+
+                    <!-- Start Header Navigation -->
+                    <div class="col-lg-3 brand-item">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                data-target="#navbar-menu">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <a class="navbar-brand" href="index.html">
+                                <img src="{% static 'assets/img/updated-logo.png' %}" class="logo" alt="Logo">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- End Header Navigation -->
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="col-lg-6">
+                        <div class="collapse navbar-collapse" id="navbar-menu">
+                            <ul class="nav navbar-nav" data-in="#" data-out="#">
+                                <li><a href="/" class="active">Home</a></li>
+                                <li><a href="/about-us/">About us</a></li> 
+                                <li class="dropdown">
+                                    <a href="/services/" class="dropdown-toggle" data-toggle="dropdown">Services</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="">service1</a></li>
+                                        <li><a href="">services2</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="/news-articles/">News & Articles</a></li>
+                                <li><a href="/contact-us/">contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /.navbar-collapse -->
+
+                    <!-- Start Atribute Navigation -->
+                    <div class="col-lg-3">
+                        <div class="attr-nav">
+                            <div class="call">
+                                <div class="icon">
+                                    <img src="{% static 'assets/img/icon/phone-call.png' %}" alt="Phone">
+                                </div>
+                                <div class="info">
+                                    <span>Have any question?</span>
+                                    <h5>(012) 66795453</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Atribute Navigation -->
+
+                </div>
+
+            </div>
+        </nav>
+        <!-- End Navigation -->
+
+    </header>
+    <!-- End Header -->
+    <!-- main content  -->
+    {% block content %}
+    {% endblock %}
+    <!-- main content end  -->
+
+    <!-- Start Footer 
+    ============================================= -->
+    <footer class="bg-theme text-light">
+        <div class="container">
+            <div class="f-items default-padding">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 item">
+                        <div class="f-item about">
+                            <img src="{% static 'assets/img/updated-logo.png' %}" alt="Logo">
+                            <p>
+                                Excellence decisively nay man yet impression for contrasted remarkably. There spoke
+                                happy for you are out. Fertile how old address did showing.
+                            </p>
+                            <form action="#">
+                                <input type="email" placeholder="Your Email" class="form-control" name="email">
+                                <button type="submit"> <i class="arrow_right"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 item">
+                        <div class="f-item link">
+                            <h4 class="widget-title">Quick LInk</h4>
+                            <ul>
+                                <li>
+                                    <a href="index.html"><i class="fas fa-angle-right"></i> Home</a>
+                                </li>
+                                <li>
+                                    <a href="about-us.html"><i class="fas fa-angle-right"></i> About us</a>
+                                </li>
+                                <li>
+                                    <a href="about-us.html"><i class="fas fa-angle-right"></i> Compnay History</a>
+                                </li>
+                                <li>
+                                    <a href="about-us.html"><i class="fas fa-angle-right"></i> Features</a>
+                                </li>
+                                <li>
+                                    <a href="blog-standard.html"><i class="fas fa-angle-right"></i> Blog Page</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fas fa-angle-right"></i> Login</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 item">
+                        <div class="f-item link">
+                            <h4 class="widget-title">Services</h4>
+                            <ul>
+                                <li>
+                                    <a href="services-details.html"><i class="fas fa-angle-right"></i> House
+                                        Cleaning</a>
+                                </li>
+                                <li>
+                                    <a href="services-details.html"><i class="fas fa-angle-right"></i> Carpet</a>
+                                </li>
+                                <li>
+                                    <a href="services-details.html"><i class="fas fa-angle-right"></i> Garden</a>
+                                </li>
+                                <li>
+                                    <a href="services-details.html"><i class="fas fa-angle-right"></i> Bedroom</a>
+                                </li>
+                                <li>
+                                    <a href="services-details.html"><i class="fas fa-angle-right"></i> Residential</a>
+                                </li>
+                                <li>
+                                    <a href="services-details.html"><i class="fas fa-angle-right"></i> Maid Services</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 item">
+                        <div class="f-item contact-widget">
+                            <h4 class="widget-title">Contact Info</h4>
+                            <div class="address">
+                                <ul>
+                                    <li>
+                                        5919 Trussville Crossings Pkwy, new Dusting town, Austria
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <i class="fas fa-clock"></i>
+                                        </div>
+                                        <div class="content">
+                                            <strong>Opening Hours:</strong>
+                                            8:00 AM – 7:45 PM
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <i class="fas fa-phone"></i>
+                                        </div>
+                                        <div class="content">
+                                            <strong>Phone:</strong>
+                                            <a href="tel:2151234567">+123 34598768</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Start Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-box">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <p>&copy; Copyright 2022. All Rights Reserved by <a href="#">validthemes</a></p>
+                        </div>
+                        <div class="col-lg-6 text-right link">
+                            <ul>
+                                <li>
+                                    <a href="#">Terms</a>
+                                </li>
+                                <li>
+                                    <a href="#">Privacy</a>
+                                </li>
+                                <li>
+                                    <a href="#">Support</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Footer Bottom -->
+        <!-- Fixed Shape -->
+        <div class="fixed-shape-left">
+            <img src="{% static 'assets/img/shape/5.png' %}" alt="Shape">
+        </div>
+        <!-- End Fixed Shape -->
+    </footer>
+    <!-- End Footer -->
+
+    <!-- jQuery Frameworks
+    ============================================= -->
+    <script src="{% static 'assets/js/jquery-3.6.0.min.js' %}"></script>
+    <script src="{% static 'assets/js/popper.min.js' %}"></script>
+    <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.appear.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.easing.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'assets/js/modernizr.custom.13711.js' %}"></script>
+    <script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'assets/js/wow.min.js' %}"></script>
+    <script src="{% static 'assets/js/progress-bar.min.js' %}"></script>
+    <script src="{% static 'assets/js/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'assets/js/imagesloaded.pkgd.min.js' %}"></script>
+    <script src="{% static 'assets/js/count-to.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.nice-select.min.js' %}"></script>
+    <script src="{% static 'assets/js/YTPlayer.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.event.move.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.twentytwenty.js' %}"></script>
+    <script src="{% static 'assets/js/bootsnav.js' %}"></script>
+    <script src="{% static 'assets/js/main.js' %}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
-
-
-
-
-    <script src="{% static  'assets/plugins/revolution/revolution/js/jquery.themepunch.tools.min.js' %}"></script>
-    <script src="{% static  'assets/plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js' %}"></script>
-
-    <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
-    <script src="{% static  'assets/plugins/revolution/revolution/js/extensions/revolution-plugin.js' %}"></script>
-
-    <!-- REVOLUTION SLIDER SCRIPT FILES -->
-    <script src="{% static  'assets/js/rev-script-2.js' %}"></script>
-
 
     {% block javascripts %}
     <script>
