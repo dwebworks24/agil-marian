@@ -1,6 +1,6 @@
 .gallery {
-    --s: 280px; /* control the size */
-    --g: 10px; /* control the gap */
+    --s: 280px; 
+    --g: 10px; 
     display: grid;
     margin: calc(var(--s) + var(--g));
 }
