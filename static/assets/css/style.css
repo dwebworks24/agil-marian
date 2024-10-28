@@ -8724,3 +8724,10 @@ a.btn-common:hover {
 		margin-top: 0;
 	}
 }
+
+
+.stack-holders{
+   background-image: url(/static/assets/img/backgrounds/bg-01.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
