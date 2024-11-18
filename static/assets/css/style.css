@@ -494,7 +494,7 @@ input {
 	box-shadow: inherit !important;
 }
 
-.shadow.dark::after {
+/* .shadow.dark::after {
 	background: var(--dark);
 	content: "";
 	height: 100%;
@@ -504,7 +504,7 @@ input {
 	top: 0;
 	width: 100%;
 	z-index: -1;
-}
+} */
 
 .shadow.dark-hard::after {
 	background: var(--dark);
@@ -1470,7 +1470,7 @@ button:focus {
 =================================================================== */
 
 .breadcrumb-area {
-	padding: 150px 0;
+	padding: 120px 0;
 	position: relative;
 	z-index: 1;
 	overflow: hidden;
@@ -7257,7 +7257,7 @@ footer .footer-bottom li:first-child::before {
 }
 
 footer .footer-bottom-box {
-	padding: 50px 0;
+	padding: 20px 0;
 	position: relative;
 	z-index: 1;
 }
@@ -8730,4 +8730,18 @@ a.btn-common:hover {
    background-image: url(/static/assets/img/backgrounds/bg-01.png);
    background-repeat: no-repeat;
    background-size: cover;
+}
+.text-justify{
+
+	text-align: justify;
+}
+.f-item ol,.f-item ul {
+	padding-left: orem;
+}
+
+.sub-page-ali{
+
+    background-position: center center !important;
+    background-size: 100% !important;
+	background-repeat: no-repeat;
 }
