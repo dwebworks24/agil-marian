@@ -562,8 +562,8 @@ input {
 }
 
 .default-padding {
-	padding-top: 120px;
-	padding-bottom: 120px;
+	padding-top: 70px;
+	padding-bottom: 50px;
 }
 
 .default-padding-top {
@@ -8744,4 +8744,9 @@ a.btn-common:hover {
     background-position: center center !important;
     background-size: 100% !important;
 	background-repeat: no-repeat;
+}
+.services-footer{
+	display: flex;
+	flex-wrap: wrap;
+
 }
