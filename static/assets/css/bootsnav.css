@@ -2809,7 +2809,7 @@ ul.cart-list>li.total>.btn {
 
 @media (min-width: 1024px) {
 	nav.navbar .navbar-brand {
-		padding: 22px 0;
+		padding: 10px 0 !important;
 	}
 
 	.navbar.nav-full-width .navbar-header .navbar-brand {
