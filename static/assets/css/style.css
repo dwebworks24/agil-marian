@@ -8750,3 +8750,11 @@ a.btn-common:hover {
 	flex-wrap: wrap;
 
 }
+
+.timeline{
+background-image: url(../img/backgrounds/2.png);
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin-bottom: 80px !important;
+}
