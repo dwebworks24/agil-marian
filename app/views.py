@@ -27,6 +27,17 @@ def about(request):
     except:
         html_template = loader.get_template('uifiles/page-500.html')
         return HttpResponse(html_template.render(context, request))
+    
+def naval_architecture(request):
+    context = {}
+    try:
+        return render(request, 'uifiles/Naval-architecture.html',context)
+    except template.TemplateDoesNotExist:
+        html_template = loader.get_template('uifiles/page-404.html')
+        return HttpResponse(html_template.render(context, request))
+    except:
+        html_template = loader.get_template('uifiles/page-500.html')
+        return HttpResponse(html_template.render(context, request))
 
 def services(request):
     context = {}
